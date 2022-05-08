@@ -1,0 +1,217 @@
+
+.teaching__container {
+    @media only screen and (min-width: 769px) {
+        padding-top: 50px;
+	}
+}
+
+.teaching__title {
+    margin-bottom: 25px;
+
+    @media only screen and (min-width: 769px) {
+        margin-bottom: 31px;
+	}
+}
+
+.teaching__logo {
+    position: relative;
+    font-family: 'Lato-Bold';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.5;
+    }
+
+    @media only screen and (min-width: 361px) {
+		font-size: 40px;
+		line-height: 64px;
+	}
+
+    @media only screen and (min-width: 1281px) {
+		font-size: 48px;
+	}
+
+}
+
+.teaching__logo_pink {
+    color: $pinkColor;
+
+    @media only screen and (min-width: 361px) {
+		font-size: 40px;
+		line-height: 64px;
+	}
+
+    @media only screen and (min-width: 1281px) {
+		font-size: 48px;
+	}
+}
+
+.teaching__logo::after {
+    content: '';
+    position: absolute;
+    top: 32px;
+    left: 0;
+    width: 131px;
+    height: 4px;
+    background-color: $pinkColor;
+    border: none;
+    border-radius: 5px;
+
+    @media only screen and (min-width: 361px) {
+        top: 53px;		
+        width: 218px;
+        height: 6px;
+	}
+
+    @media only screen and (min-width: 769px) {
+        top: 56px;
+    }
+
+    @media only screen and (min-width: 1281px) {
+        top: 59px;
+        width: 258px;
+        height: 8px;
+    }
+}
+
+.teaching__descr {
+    margin-bottom: 50px;
+    text-align: center;
+
+    @media only screen and (min-width: 361px) {
+        margin-bottom: 74px;
+	}
+
+    @media only screen and (min-width: 769px) {
+        max-width: 684px;
+        margin: 0 auto 84px;
+    }
+    
+    @media only screen and (min-width: 1281px) {
+        max-width: 846px;
+        margin: 0 auto 84px;
+    }
+}
+
+.teaching__list,
+.teaching__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 17px;
+    text-align: center;
+}
+
+.teaching__list {
+    padding-bottom: 70px;
+
+    @media only screen and (min-width: 361px) {
+        align-items: baseline;
+        justify-content: center;
+	}
+
+    @media only screen and (min-width: 769px) {
+        justify-content: space-between;
+        max-width: 100%;
+        padding-left: 0;
+	}
+
+    @media only screen and (min-width: 1281px) {
+        padding-right: 0;
+	}
+}
+
+.teaching__item {
+    @media only screen and (min-width: 361px) {
+        align-items: flex-start;
+        justify-content: flex-start;    
+        width: 318px;
+        padding-right: 0;
+        text-align: left;
+	}
+
+    @media only screen and (min-width: 769px) {
+        max-width: 226px;
+        margin-bottom: 0;
+        padding-left: 0;
+	}
+
+    @media only screen and (min-width: 1281px) {
+        max-width: 289px;
+        margin-bottom: 0;
+        padding-left: 0;
+	}
+}
+
+.teaching__item:not(:last-child) {
+    margin-bottom: 40px;
+
+    @media only screen and (min-width: 361px) {
+        margin-bottom: 0;
+	}
+}
+
+.teaching__item:not(:nth-child(n+2)) {
+    @media only screen and (min-width: 361px) {
+        margin-bottom: 60px;
+	}
+
+    @media only screen and (min-width: 769px) {
+        margin-bottom: 0;
+	}
+}
+
+.item__icon {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 20px;
+    padding: 11px;
+    background-color: $pinkColor;
+    border-radius: 15px;
+    @include bg('auto');
+
+    @media only screen and (min-width: 1281px) {
+        height: 70px;
+        width: 70px;
+        margin-bottom: 28px;
+    }
+}
+
+.item__title {
+    margin-bottom: 10px;
+    font-family: 'Lato-Regular';
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+
+
+    @media only screen and (min-width: 361px) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    @media only screen and (min-width: 1281px) {
+        margin-bottom: 15px;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+}
+
+.item__descr {
+    font-family: 'Lato-Regular';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+
+    @media only screen and (min-width: 1281px) {
+        font-size: 18px;
+        line-height: 29px;
+    }
+}
